@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="moreforms.html">More Forms</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Join a Scoial Network</h1>
+
+    <form
+      action="https://wp.zybooks.com/form-viewer.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <label for="fullName">Full name:</label>
+        <input type="text" name="fullName" id="fullName" required />
+      </div>
+
+      <div>
+        <label for="email">Email address:</label>
+        <input type="text" name="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="about"> About you:</label>
+        <textarea name="about" id="about" cols="50" rows="3"></textarea>
+      </div>
+
+      <div>
+        <label for="picture">Photo:</label>
+        <input type="file" accept="image/*" name="picture" id="picture" />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
