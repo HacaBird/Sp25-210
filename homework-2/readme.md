@@ -9,3 +9,5 @@ I chose to make a blog about poetry becasue it's something I love to do in my fr
 For this I assignment I created a navigation system, properly styled it, and created basic pages. I then used div classes to styalize my content boxes more thoroughly. I used anchor tags for the navigation system to link to my other html pages. I used a lot of our past learned techniques like using headings, paragraph tags, and images. I think overall I had fun with it and probably spent more time than I should havemaking it look pretty, but it was worth it.
 
 ### Live Link
+
+[Blog Page] https://hacabird.github.io/Sp25-210/homework-2/
