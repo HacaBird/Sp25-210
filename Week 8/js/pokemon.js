@@ -19,7 +19,7 @@ function startJourney() {
     const starterPokemon =[
         {name:"Bulbasaur", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png"},
         {name: "Charmander", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png"},
-        {name: "Squirtle",img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"},
+        {name: "Squirtle", img: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"},
     ];
 
     for (let i = 0; i < starterPokemon.length; i++) {
@@ -52,3 +52,4 @@ function choosePokemon(e){
         myPokemon = {name: pokemonName, img: PokemonImg}
     }
 }
+
