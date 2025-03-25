@@ -34,29 +34,68 @@ function chooseColor(e) {
     if (confrimChoice) {
         adventureRef.innerHTML += "<p>You chose " + colorName + "</p>";
 
- ///create new button
-    const atkdBtn = document.createElement("buton")
+ ///create new button (attack or run)
+    const atkBtn = document.createElement("button")
     atkBtn.onclick = attackMove
 
     if (colorName === "Howl") {
         atkBtn.innerHTML = "Claws";
         atkBtn.dataset.move = "Claws";
     }
-    else if (colorName ==="Princess Mononoke")
+    else if (colorName === "Princess Mononoke") {
         atkBtn.innerHTML = "Sword"
         atkBtn.dataset.move = "Sword"
     }
 
-    adventureRef.appendChild(atkBtn)
+    adventureRef.appendChild(atkBtn) }
 
-    const secAtkBtn = document.createElement
-    secAtkBtn.innerHTML = "Secondary Attack"
-    secAtkBtn.onclick = secondAttack
+    const runAwayButton = document.createElement("button");
+    runAwayButton.innerHTML = "Run Away";
+    runAwayButton.onclick = runAway;
+    adventureRef.appendChild(runAwayButton);
 
-    adventureRef.appendChild(secAttackBtn)}
-
-        function secAtkBtn() {
-        adventureRef.innerHTML = "<p>You used Seconhand Melee</p>";
-
-
+    myColor = { name: colorName};
 }
+
+
+///
+ 
+function runAway() {
+    adventureRef.innerHTML += "<p>You ran away</p>";
+}
+
+function attackMove(e) {
+    const attackMove = e.currentTarget.dataset.move
+
+    adventureRef.innerHTML +=
+    "<p>" + myColor.name + " used " + attackMove + "</p>";
+
+
+    if (attackMove === "Claws"){
+        attackMove.innerHTML = "Claws";
+        attackMove.dataset.move = "Claws";
+    }
+    else if (attackMove === "Sword"){
+        attackMove.innerHTML = "Sword";
+        attackMove.dataset.move = "Sword";
+    }
+}
+
+////
+
+const secAtkBtn = document.createElement("button")
+secAtkBtn.onclick = secAttackMove
+
+if (myColor === "Howl") {
+    secAtkBtn.innerHTML = "Wings";
+    secAtkBtn.dataset.move = "Wings";
+}
+else if (myColor === "Princess Mononoke") {
+    secAtkBtn.innerHTML = "Spear"
+    secAtkBtn.dataset.move = "Spear"
+}
+
+adventureRef.appendChild(secAtkBtn) 
+
+
+
