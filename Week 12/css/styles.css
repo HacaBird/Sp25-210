@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav ul {
+  background-color: teal;
+
+  margin-left: 16px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: 5px underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+}
+
+#dreams {
+    margin-left: 20px;
+}
+
+section#dreams {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 40px;
+}
+
+.dream {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px:
+}
+
+.dream p {
+    margin-top: auto;
+}
+
+.dream .heart {
+    color: red;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dream .edit {
+    padding: 4px;
+}

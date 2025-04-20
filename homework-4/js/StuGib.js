@@ -81,7 +81,7 @@ function attackMove(e) {
     }
 }
 
-////
+////Second Attack 
 
 const secAtkBtn = document.createElement("button")
 secAtkBtn.onclick = secAttackMove
